@@ -1,5 +1,6 @@
 import http.server
 import socketserver
+from Agent_One import Agent_One
 
 PORT = 8080
 DIRECTORY = 'public'
@@ -20,13 +21,17 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         #To store the user's message in this variable.
         post_body = self.rfile.read(content_length)
         self.end_headers()
+        # print(type(post_body))
         
         #This line print the user's message as "user query".
-        print('user query', post_body)
+        # print('user query', post_body)
+        chatbot_reply = Agent_One(post_body.decode("utf-8"))
         
         #This is an example to show how the server would send a reply to the user.
-        chatbot_reply = 'Hello, I am Chatbot'
+        # chatbot_reply = 'Hello, I am Chatbot'
         self.wfile.write(str.encode(chatbot_reply))
+        
+        return post_body
 
         #Socket Server Controller
 with socketserver.TCPServer(('', PORT), Handler) as httpd:
