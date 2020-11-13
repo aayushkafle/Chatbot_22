@@ -1,0 +1,51 @@
+﻿dialog_acts,Description,Example,response
+fw,welcome,"Welcome ""You're welcome""",It's my pleasure
+aa,agree/accept, That's exactly it,Thank you
+t1,self-talk,What's the word I am looking for,Ohh! Look's like you are talking with yourself.
+b,acknowledge (backchannel) ,Uh-huh,Hmm. I don't know what to say.
+bd,downplayer,That's all right,Hmm. I am not sure about that mate.
+ad,action-directive,Why don't you go first,
+x,non-verbal,"[Laughter],[Throat_Clearing]",Can you rephrase your statement?
+%,abandoned or turn-exit,"So, - ","Hmm, looks like you have left"
+h,hedge,I don't know if I am making any sense or not,Don't worry! It happens with everyone
+ft,thanking,"Hey, thanks a lot",You are welcome.
+nn,no answers,no,Ok! Thanks.
+bh,backchannel in question form,Is that right?,It's ok if you think so.
+no,other answers,I don't know,Hmm. It's fine I guess.
+co,offer,,"Thanks, "
+qw,wh-question,"Well, how old are you?",
+^g,tag question,Right?,"I am quite out ouf context, can you please rephrase your question?"
+t3,3rd-party-talk,"My goodness, Diane, get down form there",I am not sure if you are talking with me.
+o,other,,"I am not sure I understand this, can you please rephrase this."
+sv,statement-opinion,I think it's great,"Yeah, but I am not intelligent enough to judge that."
+ar,reject,"Well, no",Ok! Thanks.
+qrr,or-clause,or it is more of a company?,"Well, this statement is too complex for me to understand"
+nd,answer dispreferred,"Well, not so much that","It's ok, I understand."
+qo,open-question,How about you?,
+^q,quotation,You can't be pregnant and have cats,"Yeah, but I am not intelligent enough to judge that."
+fo,other-forward-function,,"Well, this statement is too complex for me to understand"
+^h,hold before answer/agreement,I'm drawing a blank,"No problem, take as much time as you want"
+arp,reject-part,,"It's ok, I understand."
+ny^e,affirmative non-yes answers,It is,Ok
+b^m,repeat-phrase,"Oh, fajitas",Are you repeating?
+ng,negative non-no answers,"Uh, not a whole lot.","I guess it's a no. Anyway, thanks"
+na,affirmative non-yes answers,It is,I guess it's a yes. Thanks
+qh,rhetorical-questions,Who would steal a newspaper?,"I guess you are asking a rhetorical question, but it is too complex for me to understand"
+fc,conventional-closing,"Well, it’s been nice talking to you.","Thanks, it was nice to talk with you too. See you again"
+nn^e,negative non-no answers,"Uh, not a whole lot.","Ok, thanks"
+cc,commit,,thanks
+^2,collaborative completion,Who aren't contirbuting.,"Exactly, thanks for helping"
+qw^d,declarative wh-question,You are what kind of buff?,
+sd,Statement-non-opinion,Me. I'm in the legal department,
+bf,summarize/reformulate,"Oh, you mean you shwitched schools for the kids","Yeah, you got me correct."
+qy^d,declarative yes-no question,so you can afford to get a house?,
+ny,yes answers,Yes,Ok
+bk,response acknowledgement,"Oh, ok.",Thanks for understanding
+br,signal-non-understanding,Excuse me?,
+by,sympathetic comment,I'm sorry to hear about that,Thanks for understanding
+fa,apology,I'm sorry,No problem.
+qy,yes-no question,Do you have to have any special training,
+ba,appreciation,I can imagine,"Well, I don't know what to say. Thanks."
+bc,correct-misspeaking,,"Sorry, my mistake"
+oo,open-option,We could have lab or chicken,I am not intellignet enough to make such decisions
+fp,conventional-opening,How are you?,"Hello, I am good. How are you?"
