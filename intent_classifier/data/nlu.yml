@@ -81,6 +81,10 @@ nlu:
     - Precise Location?
     - GPS?
     - can you give your location in google map?
+    - what is your gps coordinates
+    - can you provide me your gps
+    - can you say your gps coordiantes
+    - your gps coordinates
   
 - intent: function
   examples: |
