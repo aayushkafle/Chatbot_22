@@ -14,6 +14,7 @@ from unidecode import unidecode
 import numpy as np
 import string
 
+from chatbot.agent2 import agent2
 
 Similarity_Threshold = 0.7
 index = 0
@@ -245,9 +246,42 @@ def SearchContext(Query):
         
     return 0,-1
             
+class Agent_One_library:
+    def __init__(self):
+        self.a2 = agent2("library")
+
+    def query_A(self, Query):
+        global index
+        global Response
+        response, dialog_act, intent = self.a2.classify_intent(Query)
+
+        # if this is the first query in the session skip checking the context history because it's empty and forward the query to agent 2
+        if index == 0: 
+            History.setdefault(index,{})[Query] = response
+            Response = response
+            index_Stack.append(index)
+            index += 1
+        else :
+            CalcSim, i = SearchContext(Query)
+            if CalcSim :
+                Response = Res[i]
+            else:
+                History.setdefault(index,{})[Query] = response
+                Response = response
+                index_Stack.append(index)
+                index += 1
+                
 
 
-def Agent_One(Query):
+        # Response = 'Hello, I am Chatbot'
+        for key, value in History.items():
+            print(key , ":" , value)
+            print("dialog_act: ", dialog_act, ", intent: ", intent)
+            
+        return Response
+        
+
+""" def Agent_One(Query):
     global index
     global Response
 
@@ -268,11 +302,14 @@ def Agent_One(Query):
             index += 1
             
 
+
     # Response = 'Hello, I am Chatbot'
     for key, value in History.items():
         print(key , ":" , value)
         
     return Response
+ """
+
 
 # for i in range(4):
 #     Query = input("Enter the Query :")

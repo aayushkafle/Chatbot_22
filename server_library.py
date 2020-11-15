@@ -1,15 +1,15 @@
 import http.server
 import socketserver
-from Agent_One import Agent_One
+from Agent_One_library import Agent_One_library
 
-PORT = 8080
-DIRECTORY = 'public'
+PORT = 8090
+DIRECTORY = 'public_library'
+A1 = Agent_One_library()
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIRECTORY, **kwargs)
 
-        #
     def do_POST(self):
         
         #This line acknowledges that the server gets a message.
@@ -25,7 +25,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         
         #This line print the user's message as "user query".
         # print('user query', post_body)
-        chatbot_reply = Agent_One(post_body.decode("utf-8"))
+        chatbot_reply = A1.query_A(post_body.decode("utf-8"))
         
         #This is an example to show how the server would send a reply to the user.
         # chatbot_reply = 'Hello, I am Chatbot'

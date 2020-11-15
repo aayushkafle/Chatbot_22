@@ -1,92 +1,147 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: name
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - what is your name?
+    - whats your name?
+    - can you tell me your name?
+    - your name
+    - tell me your name
+    - what can I call you?  
+    - what is your surname?
+    - tell me your surname
+    - can you tell me your surname?
+    - whats your last name?
+    - what is your family name?
 
-- intent: goodbye
+- intent: age
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - how old are you?
+    - can you tell your age?
+    - what is your age?
+    - your age?
+    - please tell me your age.
 
-- intent: affirm
+- intent: gender
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - what is your gender
+    - are you male or female
+    - what is your sex?
+    - are you a girl?
+    - are you a boy?
+    - tell me your gender
 
-- intent: deny
+- intent: location
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - where do you live?
+    - what is the location of your home?
+    - where you live?
+    - where is your home?
+    - where is your house?
+    - can you tell me your home?
+    - what is your address?
 
-- intent: mood_great
+- intent: parents
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - who is your creator?
+    - who created you?
+    - who made you?
+    - who is your father?
+    - who is your mother?
+    - who are your parents?
+    - who invented you?
+    - who is your inventor?
 
-- intent: mood_unhappy
+- intent: swearing
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - shit
+    - fuck you
+    - I hate you
+    - bullshit
+    - asshole
+    - bastard
+    - motherfucker
+    - fuck
+    - bitch
+    - son of a bitch
+    - whore  
 
-- intent: bot_challenge
+- intent: details
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - details
+    - can you tell me your details?
+    - can you explain your work?
+    - explain yourself
+    - please tell me about you
+
+- intent: GPS
+  examples: |
+    - GPS Coordinates
+    - Precise Location?
+    - GPS?
+    - can you give your location in google map?
+  
+- intent: function
+  examples: |
+    - what are your functions?
+    - what do you do?
+    - what can you do?
+    - what can you talk?
+    - tell me your functions.
+    - tell me what do you do.
+    - which language do you speak?
+    - language you speak.
+
+- intent: who
+  examples: |
+    - who are you?
+    - how can I know you?
+    - what is your speciality?
+    - How are you unique?
+
+- intent: like
+  examples: |
+    - I love you
+    - Do you love me?
+    - Do you like me?
+    - I like you.
+    - would you like to get married?
+    - I want to date you
+    - will you date me?
+    - will you go out with me?
+
+- intent: google
+  examples: |
+    - who is sachin tendulkar?
+    - what is the distance between mars and earth
+    - what is the height of mount everest
+    - who is the president of the USA
+    - how to reach finland from Nepal
+    - how many minutes are there in an hour
+    - how to climb a tree
+    - who created facebook
+    - what is a chatbot
+    - go to china form nepal
+    - how far is oulu from helsinki
+    - how to swim
+    - how many players are there in a hockey team
+    - what is the name of trump's father?
+    - what is the name of world's tallest man?
+
+- intent: command_clear
+  examples: |
+    - please clear the chat
+    - clear the session
+    - clear the chat
+    - clear the message
+    - delete all the messages
+    - can you reset the chat?
+    - can you restart this window?
+
+- intent: command_close
+  examples: |
+    - close the chat
+    - please exit the chat
+    - please exit
+    - exit chat
