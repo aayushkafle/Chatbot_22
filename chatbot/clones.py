@@ -10,6 +10,7 @@ cafe = {
     "function":"My function is to converse and answer general queries in English",
     "who":"I am a chatbot developed by the students of University of Oulu. I am located at Juvenes Café Hub.",
     "like":"Well, I like you too as a friend",
+    "nlu_fallback": "Sorry, I cannot understand you. Please rephrase.",
 }
 
 library = {
@@ -24,6 +25,7 @@ library = {
     "function":"My function is to converse and answer general queries in English",
     "who":"I am a chatbot developed by the students of University of Oulu. I am located at the university's library.",
     "like":"Well, I like you too as a friend",
+    "nlu_fallback": "Sorry, I cannot understand you. Please rephrase.",
 }
 
 gym = {
@@ -38,6 +40,7 @@ gym = {
     "function":"My function is to converse and answer general queries in English",
     "who":"I am a chatbot developed by the students of University of Oulu. I am located just outside the university.",
     "like":"Well, I like you too as a friend",
+    "nlu_fallback": "Sorry, I cannot understand you. Please rephrase.",
 }
 
 response = {"cafe":cafe, "library":library, "gym":gym}
