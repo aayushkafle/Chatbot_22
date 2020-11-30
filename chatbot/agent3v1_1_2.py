@@ -286,4 +286,4 @@ def agent3(query):
     if len(documents[best_doc])>100:
         return documents[best_doc][:50], search_result_list[best_doc]
     else:
-        return documents[best_doc]
+        return documents[best_doc], search_result_list[best_doc]
